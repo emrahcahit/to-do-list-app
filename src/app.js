@@ -53,10 +53,6 @@ function renderTodos() {
     clearBtn.style.display = "none";
   } else {
     clearBtn.style.display = "inline-block";
-    clearBtn.style.position = "relative";
-    clearBtn.style.left = "50%";
-    clearBtn.style.top = "50%";
-    clearBtn.style.transform = "translate(-50%, -50%)";
   }
 
   // Loop through todos and create DOM elements for each one

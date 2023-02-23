@@ -1,6 +1,8 @@
 
 .container {
-    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
     margin: 0 auto;
     text-align: center;
     border: black 2rem solid;
@@ -11,7 +13,7 @@
   
   h1 {
     margin-top: 0;
-    color: rgb(224, 224, 224)
+    color: rgba(224, 224, 224, 0.952)
   }
   
   form {
@@ -65,10 +67,11 @@
     font-size: 14px;
     cursor: pointer;
     margin: auto;
+    align-self: center;
   }
   
   button:hover {
-    background: linear-gradient(to right, #6e01b6, #8200a3, #5d5fce);
+    background: linear-gradient(to right, #6e01b6,  #5d5fce);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
     border-radius: 2px;
@@ -90,11 +93,10 @@
     word-wrap: break-word;
     word-break: break-all;
     color: rgb(224, 224, 224);
+    margin-bottom: .3rem;
   }
   
-  li:last-child {
-    border-bottom: none;
-  }
+
   
   label {
     flex-grow: 1;
@@ -104,12 +106,13 @@
   input[type="checkbox"] {
     margin-right: 10px;
     transform: scale(2);
+    accent-color: #5d5fcea4;
     /* Increase the size of the checkbox */
   }
   
   .completed {
     text-decoration: line-through;
-    background-color: #3f3f3f;
+    background-color: #473d3d9f;
     font-style: italic;
     border-radius: 15px;
   }
@@ -126,16 +129,24 @@ body {
 .todo_class {
     padding: 1rem;
     padding: .5rem 3rem;
-    color: white;
+    color: rgb(255, 255, 255);
     box-shadow: 0 0 6px 0 rgb(158, 96, 212);
     border: solid 2px transparent;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #6413ce, #bf0bec, #8281e6);
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #6413ce, #8281e6);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    box-shadow: 2px 1000px 1px rgb(0, 0, 0) inset;
+    box-shadow: 2px 1000px 1px rgb(3, 3, 3) inset;
     border-radius: 0.1rem;
 }
 
-#todoList {
-    color: black;
+
+
+.todo_class:hover{
+    box-shadow: none;
+    transform: translateY(-1px);
+    transition: transform 0.3s;
+}
+
+::placeholder {
+    color: rgba(224, 222, 222, 0.829);
 }
