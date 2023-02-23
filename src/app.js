@@ -53,10 +53,6 @@ function renderTodos() {
     clearBtn.style.display = "none";
   } else {
     clearBtn.style.display = "inline-block";
-    clearBtn.style.position = "relative";
-    clearBtn.style.left = "50%";
-    clearBtn.style.top = "50%";
-    clearBtn.style.transform = "translate(-50%, -50%)";
   }
 
   // Loop through todos and create DOM elements for each one
@@ -324,3 +320,4 @@ document.querySelector("form") selects the first <form> element in the HTML docu
 
 handleFormSubmit is a function that is defined in the code. Its purpose is to handle the form submission, which could involve validating the form data, sending the data to a server, or performing some other action based on the form contents. */
 document.querySelector("form").addEventListener("submit", handleFormSubmit);
+

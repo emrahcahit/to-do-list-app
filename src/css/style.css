@@ -1,11 +1,19 @@
+
 .container {
+    display: flex;
+    flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
+    border: black 2rem solid;
+    background-color: black;
+    border-radius: 0.5rem;
+    color: #ffffff;
   }
   
   h1 {
     margin-top: 0;
+    color: rgba(224, 224, 224, 0.952)
   }
   
   form {
@@ -23,15 +31,16 @@
   button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4caf50;
-    color: white;
+    background-color:  #5d5fcea4;
+    color: rgb(224, 224, 224);
     border: none;
     cursor: pointer;
+    border-radius: .1rem;
   }
   
   .edit-btn {
-    background-color: #007bff;
-    color: #fff;
+    background-color:  #5d5fcea4;
+    color: rgb(224, 224, 224);
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -40,8 +49,8 @@
   }
   
   .delete-btn {
-    background-color: #dc3545;
-    color: #fff;
+    background-color:  #5d5fcea4;
+    color: rgb(224, 224, 224);
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -50,19 +59,19 @@
   }
   
   #clear-btn {
-    background-color: #dc3545;
-    color: #fff;
+    background-color: #4c00ffee;
+    color: rgb(224, 224, 224);
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
-    display: flex;
     margin: auto;
+    align-self: center;
   }
   
   button:hover {
-    background: linear-gradient(to right, #845ec2, #d65db1);
+    background: linear-gradient(to right, #6e01b6,  #5d5fce);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
     border-radius: 2px;
@@ -78,16 +87,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgb(224, 224, 224);
     font-family: Arial, sans-serif;
     font-size: 16px;
     word-wrap: break-word;
     word-break: break-all;
+    color: rgb(224, 224, 224);
+    margin-bottom: .3rem;
   }
   
-  li:last-child {
-    border-bottom: none;
-  }
+
   
   label {
     flex-grow: 1;
@@ -97,12 +106,13 @@
   input[type="checkbox"] {
     margin-right: 10px;
     transform: scale(2);
+    accent-color: #5d5fcea4;
     /* Increase the size of the checkbox */
   }
   
   .completed {
     text-decoration: line-through;
-    background-color: #f0f0f0;
+    background-color: #473d3d9f;
     font-style: italic;
     border-radius: 15px;
   }
@@ -111,5 +121,32 @@
     content: "\270E ";
   }
 
-
+/*Styles*/
+body {
+    background-image: linear-gradient(to right, #160e86,  #352cb8,  #5a50e4,  #6b6161);    
+}
   
+.todo_class {
+    padding: 1rem;
+    padding: .5rem 3rem;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 6px 0 rgb(158, 96, 212);
+    border: solid 2px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #6413ce, #8281e6);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px rgb(3, 3, 3) inset;
+    border-radius: 0.1rem;
+}
+
+
+
+.todo_class:hover{
+    box-shadow: none;
+    transform: translateY(-1px);
+    transition: transform 0.3s;
+}
+
+::placeholder {
+    color: rgba(224, 222, 222, 0.829);
+}
